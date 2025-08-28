@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" />
     <title>Age Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
-        
+        <h1>Age Calculator</h1>
+        <div class="input-group">
+            <label for="dob">Enter your Date of Birth:</label>
+            <input type="date" id="dob">
+            <div class="error" id="dob-error"></div>
+        </div>
+        <button id="calcBtn">Calculate Age</button>
+
+        <div class="result">
+            <p><strong>Your Age:</strong> <span id="ageResult"></span></p>
+        </div>
     </div>
+
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
